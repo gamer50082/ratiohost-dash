@@ -10,19 +10,23 @@
     "@keyv/postgres": "^1.0.17",
     "@keyv/redis": "^2.2.1",
     "@keyv/sqlite": "^2.0.3",
+    "axios": "^0.25.0",
     "chalk": "^4.1.0",
+    "datatables.net": "^1.11.4",
     "discord.js": "^12.5.3",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "express-ws": "^4.0.0",
     "javascript-obfuscator": "^2.19.1",
+    "jquery": "^3.6.0",
     "keyv": "^4.0.4",
+    "moment": "^2.29.1",
     "node-cache": "^5.1.2",
     "node-fetch": "^2.6.6",
     "nodemon": "^2.0.15",
-    "warn": "^1.0.1",
-    "axios":"^0.25.0"
+    "popper.js": "^1.16.1",
+    "warn": "^1.0.1"
   },
   "scripts": {
     "start": "node index.js"

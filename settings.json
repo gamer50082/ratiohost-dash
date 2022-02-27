@@ -2,25 +2,25 @@
   "version": "11.4.4",
   "defaulttheme": "default",
   "website": {
-    "port": 80,
+    "port": 443,
     "warning": "To run Heliactyl on a domain, you need to setup a reverse proxy, the guide is on our GitHub",
     "secret": "Example Secret"
   },
   "pterodactyl": {
-    "domain": "Panel URL, example: https://dev.heliactyl.xyz",
+    "domain": "no https://panel.ratiohost.gq",
     "note": "Don't put a / in the domain, only put for example https://panel.heliactyl.xyz or server link wont work",
     "key": "api key with all read and writes"
   },
   "limits": {
     "note": "This allows you to control the maximum amount of resources anyone can buy from the resources store.",
-    "ram":1024,
-    "cpu":200,
-    "servers":4,
-    "disk":5120
+    "ram":0,
+    "cpu":0,
+    "servers":0,
+    "disk":0
   },
   "ads": {
     "enabled": false,
-    "script": "Add your adsense etc here.",
+    "script": "",
     "note": "This allows you to put adsense, adsterra, etc easily into Heliactyl."
   },
   "database": "sqlite://database.sqlite",
@@ -32,35 +32,35 @@
        },
        "j4r": {
          "enabled": true,
-         "servers": ["example", "example"],
+         "servers": ["RatioHost", "example"],
          "every": {
-             "cpu": 10,
-             "ram": 512,
-             "disk": 512,
-             "servers": 0
+             "cpu": 100,
+             "ram": 2048,
+             "disk": 2048,
+             "servers": 1
          },
          "j4rads": [
              {
-             	"name": "Example server",
-                "invite": "https://discord.gg/Tz2bkhk5Pn"
+             	"name": "RatioHost",
+                "invite": "https://discord.gg/2G2M5WrwPb"
          	 },
              {
-                 "name": "Example server",
-                 "invite": "https://discord.gg/vSm7FGUXRf"
+                 "name": "buy j4r",
+                 "invite": "https://discord.gg/"
          	 }
          ]
        },
        "bot": {
-         "token": "Discord Bot Token",
+         "token": "OTQxOTk2MzAyNTI5NTkzMzQ1.YgeEaw.QyJacOzoiLcj-TxNVRpvxU7aG-s",
          "joinguild": {
            "_comment": "The Discord bot must be in these servers and have invite permissions.",
-           "enabled": false,
-           "guildid": ["example"]
+           "enabled": true,
+           "guildid": ["768662263267328002"]
         }
       },
       "webhook": {
         "_comment": "URL of the webhook to send messages to.",
-        "webhook_url": "",
+        "webhook_url": "https://discord.com/api/webhooks/947447849644343346/TgApM2Gbmo1VKD216HCj76XkdQxtuUAkGpj8M4VlxvBLSVxIzlwKBLB-cFUyQxy45wCm",
         "auditlogs": {
           "_comment": "This feature allows you to log actions, and get an overview of a users actions (only works if done with dashactyl, not ptero)",
           "enabled": false,
@@ -71,7 +71,7 @@
       "passwordgenerator": {
         "signup": true,
         "note": "Use this to disable signups",
-        "length": 16
+        "length": 8
       },
       "allow": {
         "newusers": true,
@@ -81,19 +81,19 @@
           "modify": true,
           "delete": true
         },
-        "overresourcessuspend": false,
+        "overresourcessuspend": true,
         "renewsuspendsystem": {
           "_comment": "This feature requires a restart in order to work. Also, this requires every server to start suspended, or else this feature would not work for some servers.",
-          "enabled": false,
-          "time": 3600,
+          "enabled": true,
+          "time": 604800,
           "cost": 0
         }
       },
       "oauth2": {
         "_comment": "Go to https://discord.dev/ and create an application to set these up.",
-        "id": "id of the application",
-        "secret": "secret of the application",
-        "link": "link of website wihtout /callback",
+        "id": "941996302529593345",
+        "secret": "2a5N_gBIo0YrhNUhlBOzdvdQG6MwWb1B",
+        "link": "dashboard.ratiohost,gq",
         "callbackpath": "/callback",
         "prompt": true,
 
@@ -118,6 +118,7 @@
       },
       "packages": {
         "default": "default",
+        "beta": "beta",
         "list": {
           "default": {
             "ram": 1024,
@@ -129,7 +130,7 @@
       },
       "locations": {
         "1": {
-          "name": "Example Location 1",
+          "name": "singapore",
 
           "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
           "package": null
