@@ -7,7 +7,7 @@
     "secret": "Example Secret"
   },
   "pterodactyl": {
-    "domain": "no https://panel.ratiohost.gq",
+    "domain": "https://panel.ratiohost.gq",
     "note": "Don't put a / in the domain, only put for example https://panel.heliactyl.xyz or server link wont work",
     "key": "api key with all read and writes"
   },
@@ -21,6 +21,7 @@
   "ads": {
     "enabled": false,
     "script": "",
+
     "note": "This allows you to put adsense, adsterra, etc easily into Heliactyl."
   },
   "database": "sqlite://database.sqlite",
@@ -51,7 +52,7 @@
          ]
        },
        "bot": {
-         "token": "OTQxOTk2MzAyNTI5NTkzMzQ1.YgeEaw.QyJacOzoiLcj-TxNVRpvxU7aG-s",
+         "token": "OTQxOTk2MzAyNTI5NTkzMzQ1.YgeEaw.XRZd8JoCMm2CfXYoqIPeMoHaijU",
          "joinguild": {
            "_comment": "The Discord bot must be in these servers and have invite permissions.",
            "enabled": true,
@@ -60,10 +61,10 @@
       },
       "webhook": {
         "_comment": "URL of the webhook to send messages to.",
-        "webhook_url": "https://discord.com/api/webhooks/947447849644343346/TgApM2Gbmo1VKD216HCj76XkdQxtuUAkGpj8M4VlxvBLSVxIzlwKBLB-cFUyQxy45wCm",
+        "webhook_url": "https://discord.com/api/webhooks/947665117418487908/HdsC5ItNo8ZkmwWKCC9-_0rwXfF1aJ_qhUvW-NnZ_zTdlOAXtVtAAx-jMmDfJSoMki0E",
         "auditlogs": {
           "_comment": "This feature allows you to log actions, and get an overview of a users actions (only works if done with dashactyl, not ptero)",
-          "enabled": false,
+          "enabled": true,
           "_comment2": "The types of notifications disabled. Values: ADMIN, LOGIN, SERVER, COUPONREDEEM",
           "disabled": []
         }
@@ -93,8 +94,8 @@
         "_comment": "Go to https://discord.dev/ and create an application to set these up.",
         "id": "941996302529593345",
         "secret": "2a5N_gBIo0YrhNUhlBOzdvdQG6MwWb1B",
-        "link": "dashboard.ratiohost,gq",
-        "callbackpath": "/callback",
+        "link": "dash.ratiohost,gq",
+        "callbackpath": "/api/discord/callback",
         "prompt": true,
 
         "ip": {
